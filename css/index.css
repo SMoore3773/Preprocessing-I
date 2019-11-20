@@ -130,28 +130,23 @@ table {
 * {
   box-sizing: border-box;
 }
-.contBoxStyle {
-  font-size: 2rem;
-  font-family: 'Shadows Into Light', cursive;
-}
-.contBoxStyle p {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-}
 html,
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  font-size: 62.5%;
 }
 html h1,
 body h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Shadows Into Light', cursive;
 }
 .mainContBox {
-  font-size: 2rem;
-  font-family: 'Shadows Into Light', cursive;
-}
-.mainContBox p {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
+  display: flex;
+  height: 30px;
+  width: 95%;
+  padding: 5px;
+  border: solid black 1px;
+  background-color: pink;
 }

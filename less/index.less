@@ -55,26 +55,37 @@ table {
 //font-family: 'Shadows Into Light', cursive;
 //font-family: 'Raleway', sans-serif;
 
-.contBoxStyle {
-	
-		font-size: 2rem;
-		font-family: 'Shadows Into Light', cursive;
-	
-	p {
-		font-size: 1.2rem;
-		font-family: 'Raleway', sans-serif;
-	}
+
+.tc() {
+	color: pink;
+}
+.contText() {
+	font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+	background-color: red;
 }
 
 html, body {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
+	font-size: 62.5%;
 	h1 {
-		font-size: 4rem;
+		font-size: 5rem;
 		font-family: 'Shadows Into Light', cursive;
 	}
 	
 }
 .mainContBox {
-	.contBoxStyle();
-}
+	display: flex;
+	height: 30px;
+	width:95%;
+	padding:5px;
+	border: solid black 1px;
 
+	background-color: pink;
+	// .tc();
+	// .mcbDes {
+	// 	.contText();
+	// }
+}
