@@ -56,36 +56,94 @@ table {
 //font-family: 'Raleway', sans-serif;
 
 
-.tc() {
-	color: pink;
-}
-.contText() {
-	font-size: 1.5rem;
-	font-family: 'Raleway', sans-serif;
-	background-color: red;
-}
 
-html, body {
+html {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	font-size: 62.5%;
-	h1 {
-		font-size: 5rem;
+	background-image: url(../img/Clouds.jpg);
+	max-width: 1660px;
+	.tc() {
+		color: pink;
+	}
+	.contText() {
+		font-size: 1.5rem;
+		font-family: 'Raleway', sans-serif;
+		line-height: 2rem;
+	}
+	.marginTB(@margin) {
+		margin-top: @margin;
+		margin-bottom: @margin;
+	}
+	.headText() {
 		font-family: 'Shadows Into Light', cursive;
 	}
-	
-}
-.mainContBox {
-	display: flex;
-	height: 30px;
-	width:95%;
-	padding:5px;
-	border: solid black 1px;
+	.cYB() {
+		color: #f5e302;
+		text-shadow: black 1px 1px 2px;
+	}
+	.cBY() {
+		color: black;
+		text-shadow: #f5e302 1px 1px 2px;
+	}
+	.flex() {
+		display:flex;
+	}
+	nav {
+		.flex();
+		justify-content: space-between;
+		.contText();
+		text-decoration: none;
+		margin: 1%;
+		
+	}
+	.navLink {
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		padding: 1rem 3rem 1rem 3rem;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 1.5rem;
+		&:hover {
+			text-shadow: 1px 1px .5rem #f5e302;
+		}
 
-	background-color: pink;
-	// .tc();
-	// .mcbDes {
-	// 	.contText();
-	// }
+	}
+	h1 {
+		font-size: 6rem;
+		.headText();
+		text-align: center;
+		.marginTB(2%);
+		.cYB();
+	}
+	h2 {
+		font-size: 3.5rem;
+		.headText();
+		.cYB();
+	}
+	body{
+		margin: 1%;
+	}	
+	.working{
+		display:none;
+	}
+	.mainCont{
+		flex-direction: column;
+		margin: 1%;
+		padding:1%;
+	}
+
+	.mcbDes{
+		.contText();
+		.marginTB(1%);		
+	}	
+	.mainContBox {
+		
+		width:95%;
+		.marginTB(2%);
+		
+	}
+	
 }
