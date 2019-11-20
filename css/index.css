@@ -130,7 +130,28 @@ table {
 * {
   box-sizing: border-box;
 }
+.contBoxStyle {
+  font-size: 2rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+.contBoxStyle p {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+}
 html,
 body {
   height: 100%;
+}
+html h1,
+body h1 {
+  font-size: 4rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+.mainContBox {
+  font-size: 2rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+.mainContBox p {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
 }
