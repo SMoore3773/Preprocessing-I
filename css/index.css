@@ -250,7 +250,7 @@ body footer {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-@media (min-width: 520px) {
+@media (min-width: 500) {
   html .mainContBox,
   body .mainContBox {
     align-content: center;
