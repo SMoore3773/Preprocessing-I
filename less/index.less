@@ -57,13 +57,18 @@ table {
 
 
 
-html {
+html, body {
 	display: flex;
 	flex-direction: column;
+	
 	height: 100%;
 	font-size: 62.5%;
 	background-image: url(../img/Clouds.jpg);
-	max-width: 1660px;
+	// background-repeat: no-repeat;
+  	background-attachment: fixed;
+	
+	
+	
 	.tc() {
 		color: pink;
 	}
@@ -92,20 +97,25 @@ html {
 	}
 	nav {
 		.flex();
+		flex-direction: row;
+		// align-content: space-between;
 		justify-content: space-between;
 		.contText();
 		text-decoration: none;
 		margin: 1%;
-		
 	}
 	.navLink {
+		.flex();
 		flex-direction: row;
 		justify-content: space-between;
-		align-content: center;
+		align-items: center;
 		padding: 1rem 3rem 1rem 3rem;
 		text-decoration: none;
 		text-align: center;
-		border-radius: 1.5rem;
+		
+		.headText();
+		font-size: 2.5rem;
+		.cYB();
 		&:hover {
 			text-shadow: 1px 1px .5rem #f5e302;
 		}
@@ -115,7 +125,7 @@ html {
 		font-size: 6rem;
 		.headText();
 		text-align: center;
-		.marginTB(2%);
+		.marginTB(5%);
 		.cYB();
 	}
 	h2 {
@@ -128,11 +138,14 @@ html {
 	}	
 	.working{
 		display:none;
+		max-width: 60rem;
 	}
 	.mainCont{
+		.flex();
 		flex-direction: column;
-		margin: 1%;
-		padding:1%;
+		align-items: center;
+		.marginTB(2%)
+		
 	}
 
 	.mcbDes{
@@ -140,10 +153,34 @@ html {
 		.marginTB(1%);		
 	}	
 	.mainContBox {
-		
+		.flex();
+		flex-direction: column;
+		align-items: center;
 		width:95%;
 		.marginTB(2%);
-		
 	}
-	
+	.mcbButton {
+
+	}
+	footer {
+		.marginTB(1%);
+	}
+	@media(min-width: 520px){
+
+		.mainContBox {
+			align-content: center;
+			width: 75%;
+		}
+		.titleSplash {
+			.flex();
+			flex-direction: column;
+			align-items: center;
+		}
+		.working {
+			display: flex;
+			width:85%;
+			height: auto;
+		}
+
+	}
 }
