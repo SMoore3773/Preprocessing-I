@@ -242,7 +242,7 @@ body .mcbButton {
 html .mcbButton:hover,
 body .mcbButton:hover {
   background-color: #f5e302;
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.445);
   box-shadow: 0.25rem 0.25rem 3rem black;
 }
 html footer,
@@ -250,7 +250,7 @@ body footer {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-@media (min-width: 500) {
+@media (min-width: 500px) {
   html .mainContBox,
   body .mainContBox {
     align-content: center;
