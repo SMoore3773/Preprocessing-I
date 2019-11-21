@@ -225,12 +225,22 @@ body .mainContBox {
 }
 html .mcbButton,
 body .mcbButton {
-  border-radius: 1rem;
+  border-radius: 2rem;
+  border-color: #f5e302;
+  background-color: rgba(213, 239, 252, 0.4);
+  padding: 1rem 2rem;
   margin-top: 1%;
   margin-bottom: 1%;
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
   line-height: 2rem;
+  transition: 0.2s;
+}
+html .mcbButton:hover,
+body .mcbButton:hover {
+  background-color: #f5e302;
+  border-color: black;
+  box-shadow: 0.25rem 0.25rem 3rem black;
 }
 html footer,
 body footer {

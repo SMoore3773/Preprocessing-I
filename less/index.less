@@ -161,9 +161,20 @@ html, body {
 		.marginTB(2%);
 	}
 	.mcbButton {
-		border-radius: 1rem;
+		
+		border-radius: 2rem;
+		border-color: #f5e302;
+		background-color: rgba(213, 239, 252, 0.4);
+		padding: 1rem 2rem;
 		.marginTB(1%);
 		.contText();
+		// opacity: 0.2;
+		transition: 0.2s;
+		&:hover {
+			background-color: #f5e302;
+			border-color: black;
+			box-shadow: .25rem .25rem 3rem black;
+		}
 	}
 	footer {
 		.marginTB(1%);
@@ -184,6 +195,5 @@ html, body {
 			width:85%;
 			height: auto;
 		}
-
 	}
 }
