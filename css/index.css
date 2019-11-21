@@ -189,11 +189,12 @@ html body,
 body body {
   margin: 1%;
 }
-html .working,
-body .working {
+html .bodyImg,
+body .bodyImg {
   display: none;
   max-width: 60rem;
   border-radius: 6rem;
+  box-shadow: 0.5rem 0.5rem 1.2rem black;
 }
 html .mainCont,
 body .mainCont {
@@ -213,7 +214,7 @@ body .mcbDes {
 }
 html .mainContBox,
 body .mainContBox {
-  background-color: rgba(213, 239, 252, 0.4);
+  background-color: rgba(213, 239, 252, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,6 +223,7 @@ body .mainContBox {
   width: 95%;
   margin-top: 2%;
   margin-bottom: 2%;
+  box-shadow: 0.5rem 0.5rem 1.2rem black;
 }
 html .mcbButton,
 body .mcbButton {
@@ -235,11 +237,12 @@ body .mcbButton {
   font-family: 'Raleway', sans-serif;
   line-height: 2rem;
   transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.445) 0.2rem 0.2rem 0.5rem;
 }
 html .mcbButton:hover,
 body .mcbButton:hover {
   background-color: #f5e302;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0.25rem 0.25rem 3rem black;
 }
 html footer,
@@ -259,10 +262,42 @@ body footer {
     flex-direction: column;
     align-items: center;
   }
-  html .working,
-  body .working {
+  html #working,
+  body #working {
     display: flex;
     width: 85%;
     height: auto;
+  }
+}
+@media (min-width: 1000px) {
+  html nav,
+  body nav {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  html .titleSplash,
+  body .titleSplash {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  html .mainContBox,
+  body .mainContBox {
+    max-width: 40%;
+    margin: 3%;
+  }
+  html .mainCont,
+  body .mainCont {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  html .bodyImg,
+  body .bodyImg {
+    display: flex;
+    max-width: 40%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
 }

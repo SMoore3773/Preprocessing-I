@@ -66,8 +66,8 @@ html, body {
 	// background-repeat: no-repeat;
   	background-attachment: fixed;
 	
-	.tc() {
-		color: pink;
+	.bordYS1() {
+		border: solid 1px #f5e302;
 	}
 	.contText() {
 		font-size: 1.5rem;
@@ -133,10 +133,11 @@ html, body {
 	body{
 		margin: 1%;
 	}	
-	.working{
+	.bodyImg{
 		display:none;
 		max-width: 60rem;
 		border-radius: 6rem;
+		box-shadow: .5rem .5rem 1.2rem black;
 	}
 	.mainCont{
 		.flex();
@@ -151,7 +152,7 @@ html, body {
 		.marginTB(1%);		
 	}	
 	.mainContBox {
-		background-color: rgba(213, 239, 252, 0.4);
+		background-color: rgba(213, 239, 252, 0.5);
 		.flex();
 		flex-direction: column;
 		align-items: center;
@@ -159,6 +160,7 @@ html, body {
 		border-radius: 5rem;
 		width:95%;
 		.marginTB(2%);
+		box-shadow: .5rem .5rem 1.2rem black;
 	}
 	.mcbButton {
 		
@@ -168,11 +170,11 @@ html, body {
 		padding: 1rem 2rem;
 		.marginTB(1%);
 		.contText();
-		// opacity: 0.2;
 		transition: 0.2s;
+		box-shadow: rgba(0, 0, 0, 0.445) .2rem .2rem .5rem;
 		&:hover {
 			background-color: #f5e302;
-			border-color: black;
+			border-color: rgba(0, 0, 0, 0.8);
 			box-shadow: .25rem .25rem 3rem black;
 		}
 	}
@@ -190,10 +192,34 @@ html, body {
 			flex-direction: column;
 			align-items: center;
 		}
-		.working {
+		#working {
 			display: flex;
 			width:85%;
 			height: auto;
+		}
+	}
+	@media(min-width: 1000px) {
+		nav {
+			.marginTB(3%);
+		}
+		.titleSplash {
+			flex-direction: row;
+			justify-content: space-evenly;
+			.marginTB(5%);
+		}
+		.mainContBox {
+			max-width: 40%;
+			margin: 3%;
+		}
+		.mainCont {
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+		}
+		.bodyImg {
+			display: flex;
+			max-width: 40%;
+			height: auto;
+			.marginTB(3%);
 		}
 	}
 }
