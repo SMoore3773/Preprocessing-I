@@ -52,8 +52,174 @@ table {
 * {
     box-sizing: border-box;
 }
+//font-family: 'Shadows Into Light', cursive;
+//font-family: 'Raleway', sans-serif;
+
+
 
 html, body {
-    height: 100%;
-}
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-size: 62.5%;
+	background-image: url(../img/Clouds.jpg);
+	// background-repeat: no-repeat;
+  	background-attachment: fixed;
+	
+	.bordYS1() {
+		border: solid 1px #f5e302;
+	}
+	.contText() {
+		font-size: 1.5rem;
+		font-family: 'Raleway', sans-serif;
+		line-height: 2rem;
+	}
+	.marginTB(@margin) {
+		margin-top: @margin;
+		margin-bottom: @margin;
+	}
+	.headText() {
+		font-family: 'Shadows Into Light', cursive;
+	}
+	.cYB() {
+		color: #f5e302;
+		text-shadow: black 1px 1px 2px;
+	}
+	.cBY() {
+		color: black;
+		text-shadow: #f5e302 1px 1px 2px;
+	}
+	.flex() {
+		display:flex;
+	}
+	nav {
+		.flex();
+		flex-direction: row;
+		// align-content: space-between;
+		justify-content: space-between;
+		.contText();
+		text-decoration: none;
+		margin: 1%;
+	}
+	.navLink {
+		.flex();
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 3rem 1rem 3rem;
+		text-decoration: none;
+		text-align: center;
+		
+		.headText();
+		font-size: 2.5rem;
+		.cYB();
+		&:hover {
+			text-shadow: 1px 1px .5rem #f5e302;
+		}
 
+	}
+	h1 {
+		font-size: 6rem;
+		.headText();
+		text-align: center;
+		.marginTB(5%);
+		.cYB();
+	}
+	h2 {
+		font-size: 3.5rem;
+		.headText();
+		.cYB();
+	}
+	body{
+		margin: 1%;
+	}	
+	.bodyImg{
+		display:none;
+		max-width: 60rem;
+		border-radius: 6rem;
+		box-shadow: .5rem .5rem 1.2rem black;
+	}
+	.mainCont{
+		.flex();
+		flex-direction: column;
+		align-items: center;
+		.marginTB(2%)
+		
+	}
+
+	.mcbDes{
+		.contText();
+		.marginTB(1%);		
+	}	
+	.mainContBox {
+		background-color: rgba(213, 239, 252, 0.5);
+		.flex();
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem;
+		border-radius: 5rem;
+		width:95%;
+		.marginTB(2%);
+		box-shadow: .5rem .5rem 1.2rem black;
+	}
+	.mcbButton {
+		
+		border-radius: 2rem;
+		border-color: #f5e302;
+		background-color: rgba(213, 239, 252, 0.4);
+		padding: 1rem 2rem;
+		.marginTB(1%);
+		.contText();
+		transition: 0.2s;
+		box-shadow: rgba(0, 0, 0, 0.445) .2rem .2rem .5rem;
+		&:hover {
+			background-color: #f5e302;
+			border-color: rgba(0, 0, 0, 0.445);
+			box-shadow: .25rem .25rem 3rem black;
+		}
+	}
+	footer {
+		.marginTB(1%);
+	}
+	@media(min-width: 500px){
+
+		.mainContBox {
+			align-content: center;
+			width: 75%;
+		}
+		.titleSplash {
+			.flex();
+			flex-direction: column;
+			align-items: center;
+		}
+		#working {
+			display: flex;
+			width:85%;
+			height: auto;
+		}
+	}
+	@media(min-width: 1000px) {
+		nav {
+			.marginTB(3%);
+		}
+		.titleSplash {
+			flex-direction: row;
+			justify-content: space-evenly;
+			.marginTB(5%);
+		}
+		.mainContBox {
+			max-width: 40%;
+			margin: 3%;
+		}
+		.mainCont {
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+		}
+		.bodyImg {
+			display: flex;
+			max-width: 40%;
+			height: auto;
+			.marginTB(3%);
+		}
+	}
+}
